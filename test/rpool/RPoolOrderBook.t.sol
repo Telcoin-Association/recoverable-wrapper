@@ -7,14 +7,14 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 import {Test} from "forge-std/src/Test.sol";
 import {MockERC20, ERC20} from "../utils/MockERC20.sol";
 import {RecoverableWrapper} from "../../contracts/rwt/RecoverableWrapper.sol";
 import {SECONDS_PER_DAY} from "../utils/constants.sol";
 import {RPoolOrderBook} from "../../contracts/rpool/RPoolOrderBook.sol";
-import {SafeCast} from "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import {SafeCast} from "@openzeppelin-contracts/utils/math/SafeCast.sol";
 
 contract RPoolOrderBookTest is Test {
     using SafeCast for uint256;

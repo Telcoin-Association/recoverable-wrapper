@@ -7,14 +7,14 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 import {IRecoverableWrapper} from "../interfaces/IRecoverableWrapper.sol";
 import {RecordsDeque, RecordsDequeLib, Record, Suspension} from "../util/RecordUtil.sol";
-import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import {ERC20, IERC20Metadata} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
-import {SafeCast} from "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import {SafeERC20} from "@openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
+import {ERC20, IERC20Metadata} from "@openzeppelin-contracts/token/ERC20/ERC20.sol";
+import {Math} from "@openzeppelin-contracts/utils/math/Math.sol";
+import {SafeCast} from "@openzeppelin-contracts/utils/math/SafeCast.sol";
 
 contract RecoverableWrapper is IRecoverableWrapper, ERC20 {
     using RecordsDequeLib for RecordsDeque;

@@ -7,13 +7,13 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 import {Suspension, Record, RecordsDeque} from "../contracts/util/RecordUtil.sol";
 import {Test} from "forge-std/src/Test.sol";
 import {RecoverableWrapper} from "../contracts/rwt/RecoverableWrapper.sol";
 import {MockERC20} from "./utils/MockERC20.sol";
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {IERC20} from "@openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import {SECONDS_PER_DAY} from "./utils/constants.sol";
 
 // solhint-disable var-name-mixedcase

@@ -7,12 +7,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 import {Test} from "forge-std/src/Test.sol";
 import {MockERC20} from "../utils/MockERC20.sol";
 import {RecoverableWrapper} from "../../contracts/rwt/RecoverableWrapper.sol";
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import {IERC20} from "@openzeppelin-contracts/token/ERC20/ERC20.sol";
 import {SigUtils} from "../utils/SigUtils.sol";
 import {SECONDS_PER_DAY} from "../utils/constants.sol";
 import {RPoolAMM} from "../../contracts/rpool/RPoolAMM.sol";
